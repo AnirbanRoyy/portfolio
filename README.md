@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+Personal portfolio of **Anirban Roy**, a full stack software engineer. It is a minimal, single-page site built with Next.js and statically prerendered, so it deploys to Vercel with no configuration.
 
-First, run the development server:
+## Features
+
+- Single page with Hero, Stats, Experience, Skills, Highlights (achievements, certifications, education) and Contact sections
+- Light and dark theme that follows the system setting, with a manual toggle and no flash on load
+- Scroll-reveal, animated counters and collapsible experience groups, all of which respect `prefers-reduced-motion`
+- All content in one typed data file, so changing the text never means touching components
+- Fully static output with no backend and no environment variables
+
+## Tech stack
+
+| Area       | Choice                                                    |
+| ---------- | --------------------------------------------------------- |
+| Framework  | [Next.js 16](https://nextjs.org) (App Router), React 19   |
+| Language   | TypeScript                                                |
+| Styling    | [Tailwind CSS 4](https://tailwindcss.com)                 |
+| Components | [shadcn/ui](https://ui.shadcn.com) (Base UI primitives)   |
+| Animation  | [Motion](https://motion.dev)                              |
+| Icons      | [Hugeicons](https://hugeicons.com) (free set)             |
+| Fonts      | Geist Sans and Geist Mono via `next/font`                 |
+
+## Getting started
+
+Requires Node.js 20.9 or newer.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open <http://localhost:3000>.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Script          | What it does                         |
+| --------------- | ------------------------------------ |
+| `npm run dev`   | Start the dev server                 |
+| `npm run build` | Create the production build          |
+| `npm start`     | Serve the production build           |
+| `npm run lint`  | Run ESLint                           |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project structure
 
-## Learn More
+```
+src/
+├── app/
+│   ├── layout.tsx        # Fonts, metadata, theme init script
+│   ├── page.tsx          # Page composition
+│   └── globals.css       # Tailwind and shadcn theme tokens
+├── components/
+│   ├── sections/         # Hero, Stats, Experience, Skills, Highlights, Contact
+│   ├── ui/               # shadcn/ui components (button, badge, card, separator)
+│   ├── header.tsx        # Sticky nav
+│   ├── theme-toggle.tsx  # Light/dark switch
+│   ├── reveal.tsx        # Scroll-reveal wrapper (Motion)
+│   └── counter.tsx       # Animated number counter
+├── data/
+│   └── resume.ts         # All site content
+└── lib/utils.ts          # cn() class helper
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Using this as a template
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You are welcome to fork this for your own portfolio.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Replace the content in `src/data/resume.ts` (profile, stats, experience, skills, links).
+2. Update the title and description in `src/app/layout.tsx`.
+3. Adjust colors in the CSS variables in `src/app/globals.css`.
+4. Add shadcn components with `npx shadcn@latest add <component>`. The project is configured to use Hugeicons.
 
-## Deploy on Vercel
+Please swap in your own details and don't publish my personal information as yours.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploying to Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push the repo to GitHub.
+2. Import it at [vercel.com/new](https://vercel.com/new). Vercel detects Next.js automatically.
+3. Click **Deploy**. No environment variables are needed.
+
+You can also deploy from the CLI with `npx vercel`.
+
+## Contact
+
+- Email: anirban15987@gmail.com
+- LinkedIn: [anirbanroyy](https://www.linkedin.com/in/anirbanroyy)
+- GitHub: [AnirbanRoyy](https://github.com/AnirbanRoyy)
