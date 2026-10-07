@@ -7,11 +7,11 @@ export function Reveal({
     children,
     delay = 0,
     className,
-}: {
+}: Readonly<{
     children: ReactNode;
     delay?: number;
     className?: string;
-}) {
+}>) {
     const reduce = useReducedMotion();
     return (
         <motion.div

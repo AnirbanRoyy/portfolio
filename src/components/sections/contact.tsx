@@ -1,5 +1,9 @@
 import { HugeiconsIcon } from "@hugeicons/react";
-import { GithubIcon, Linkedin01Icon, Mail01Icon } from "@hugeicons/core-free-icons";
+import {
+    GithubIcon,
+    Linkedin01Icon,
+    Mail01Icon,
+} from "@hugeicons/core-free-icons";
 import { Reveal } from "@/components/reveal";
 import { buttonVariants } from "@/components/ui/button";
 import { profile } from "@/data/resume";

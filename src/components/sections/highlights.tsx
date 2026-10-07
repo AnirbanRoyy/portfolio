@@ -9,12 +9,12 @@ function LinkCard({
     meta,
     body,
     href,
-}: {
+}: Readonly<{
     title: string;
     meta?: string;
     body: string;
     href: string;
-}) {
+}>) {
     return (
         <a
             href={href}
@@ -28,7 +28,10 @@ function LinkCard({
                         <h4 className="text-sm font-medium leading-snug">
                             {title}
                         </h4>
-                        <HugeiconsIcon icon={ArrowUpRight01Icon} className="size-4 shrink-0 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                        <HugeiconsIcon
+                            icon={ArrowUpRight01Icon}
+                            className="size-4 shrink-0 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                        />
                     </div>
                     {meta && (
                         <p className="font-mono text-xs text-muted-foreground">
@@ -47,10 +50,10 @@ function LinkCard({
 function Group({
     label,
     children,
-}: {
+}: Readonly<{
     label: string;
     children: React.ReactNode;
-}) {
+}>) {
     return (
         <div className="space-y-3">
             <Reveal>

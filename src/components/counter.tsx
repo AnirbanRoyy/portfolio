@@ -3,7 +3,10 @@
 import { animate, useInView, useReducedMotion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
-export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
+export function Counter({
+    to,
+    suffix = "",
+}: Readonly<{ to: number; suffix?: string }>) {
     const ref = useRef<HTMLSpanElement>(null);
     const inView = useInView(ref, { once: true });
     const reduce = useReducedMotion();

@@ -18,7 +18,10 @@ export function ThemeToggle() {
             onClick={toggle}
             aria-label="Toggle theme"
         >
-            <HugeiconsIcon icon={Sun03Icon} className="hidden size-4 dark:block" />
+            <HugeiconsIcon
+                icon={Sun03Icon}
+                className="hidden size-4 dark:block"
+            />
             <HugeiconsIcon icon={Moon02Icon} className="size-4 dark:hidden" />
         </Button>
     );

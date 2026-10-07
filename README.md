@@ -12,15 +12,15 @@ Personal portfolio of **Anirban Roy**, a full stack software engineer. It is a m
 
 ## Tech stack
 
-| Area       | Choice                                                    |
-| ---------- | --------------------------------------------------------- |
-| Framework  | [Next.js 16](https://nextjs.org) (App Router), React 19   |
-| Language   | TypeScript                                                |
-| Styling    | [Tailwind CSS 4](https://tailwindcss.com)                 |
-| Components | [shadcn/ui](https://ui.shadcn.com) (Base UI primitives)   |
-| Animation  | [Motion](https://motion.dev)                              |
-| Icons      | [Hugeicons](https://hugeicons.com) (free set)             |
-| Fonts      | Geist Sans and Geist Mono via `next/font`                 |
+| Area       | Choice                                                  |
+| ---------- | ------------------------------------------------------- |
+| Framework  | [Next.js 16](https://nextjs.org) (App Router), React 19 |
+| Language   | TypeScript                                              |
+| Styling    | [Tailwind CSS 4](https://tailwindcss.com)               |
+| Components | [shadcn/ui](https://ui.shadcn.com) (Base UI primitives) |
+| Animation  | [Motion](https://motion.dev)                            |
+| Icons      | [Hugeicons](https://hugeicons.com) (free set)           |
+| Fonts      | Geist Sans and Geist Mono via `next/font`               |
 
 ## Getting started
 
@@ -33,12 +33,12 @@ npm run dev
 
 Open <http://localhost:3000>.
 
-| Script          | What it does                         |
-| --------------- | ------------------------------------ |
-| `npm run dev`   | Start the dev server                 |
-| `npm run build` | Create the production build          |
-| `npm start`     | Serve the production build           |
-| `npm run lint`  | Run ESLint                           |
+| Script          | What it does                |
+| --------------- | --------------------------- |
+| `npm run dev`   | Start the dev server        |
+| `npm run build` | Create the production build |
+| `npm start`     | Serve the production build  |
+| `npm run lint`  | Run ESLint                  |
 
 ## Project structure
 

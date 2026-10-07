@@ -2,7 +2,12 @@
 
 import { motion, useReducedMotion } from "motion/react";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { GithubIcon, Linkedin01Icon, Location01Icon, Mail01Icon } from "@hugeicons/core-free-icons";
+import {
+    GithubIcon,
+    Linkedin01Icon,
+    Location01Icon,
+    Mail01Icon,
+} from "@hugeicons/core-free-icons";
 import { buttonVariants } from "@/components/ui/button";
 import { profile } from "@/data/resume";
 
@@ -79,7 +84,8 @@ export function Hero() {
                 {...item(5)}
                 className="mt-6 flex items-center gap-1.5 text-sm text-muted-foreground"
             >
-                <HugeiconsIcon icon={Location01Icon} className="size-3.5" /> {profile.location}
+                <HugeiconsIcon icon={Location01Icon} className="size-3.5" />{" "}
+                {profile.location}
             </motion.p>
         </section>
     );

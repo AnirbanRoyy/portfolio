@@ -5,11 +5,11 @@ export function Section({
     id,
     title,
     children,
-}: {
+}: Readonly<{
     id: string;
     title: string;
     children: ReactNode;
-}) {
+}>) {
     return (
         <section id={id} className="scroll-mt-20 py-14">
             <Reveal>
