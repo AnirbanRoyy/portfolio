@@ -162,4 +162,29 @@ export const certifications = [
         body: "GKE, Compute Engine, Cloud Storage, Pub/Sub, IAM, networking, deployment.",
         href: "https://www.credly.com/badges/579d0ed5-512e-4dfc-8bed-52c66a5d71d4/public_url",
     },
+    {
+        title: "Claude 101",
+        body: "Anthropic Academy course on working effectively with Claude.",
+        href: "https://academy.claude.com/verify/400ee48c167a075af42ec112c163f4b4",
+    },
+    {
+        title: "Claude Code in Action",
+        body: "Anthropic Academy course on using Claude Code for real software work.",
+        href: "https://academy.claude.com/verify/6185e4f8c0deacf3672d8927d61f39fd",
+    },
+];
+
+export const projects = [
+    {
+        title: "CloudTube",
+        status: "In progress",
+        body: "A cloud-native video platform, evolved from a MERN YouTube clone. The goal is a production-style pipeline: upload to Cloud Storage, Pub/Sub, an FFmpeg worker on Cloud Run, HLS output served through a CDN.",
+        points: [
+            "Planned around Terraform, CI/CD, observability, Redis caching and RBAC, plus load tests.",
+            "Backend: Node, Express and Mongoose API with JWT auth, covering users, videos, comments, playlists and subscriptions.",
+            "Frontend: Next.js App Router with shadcn/ui, with live-API and mock-data modes behind one data layer.",
+        ],
+        tags: ["Next.js", "TypeScript", "Express", "MongoDB", "GCP", "Pub/Sub", "Cloud Run", "FFmpeg", "Terraform"],
+        href: "https://github.com/AnirbanRoyy/YouTube-BackEnd",
+    },
 ];

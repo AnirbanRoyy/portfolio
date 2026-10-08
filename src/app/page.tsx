@@ -3,6 +3,7 @@ import { Contact } from "@/components/sections/contact";
 import { Experience } from "@/components/sections/experience";
 import { Hero } from "@/components/sections/hero";
 import { Highlights } from "@/components/sections/highlights";
+import { Projects } from "@/components/sections/projects";
 import { Section } from "@/components/sections/section";
 import { Skills } from "@/components/sections/skills";
 import { Stats } from "@/components/sections/stats";
@@ -19,6 +20,9 @@ export default function Home() {
                 </div>
                 <Section id="experience" title="Experience">
                     <Experience />
+                </Section>
+                <Section id="projects" title="Projects">
+                    <Projects />
                 </Section>
                 <Section id="skills" title="Skills">
                     <Skills />
