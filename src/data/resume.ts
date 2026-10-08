@@ -133,13 +133,13 @@ export const achievements = [
         title: "Smart India Hackathon 2024 — Winner",
         year: "2024",
         body: "Won SIH 2024 (SIH1588) with a platform connecting food donors and NGOs to reduce food waste and hunger.",
-        href: "https://drive.google.com/file/d/1xi0DsVjbKgxEp72YI9y8yY5OtmDmI7AX/view?usp=drive_link",
+        href: "https://drive.google.com/drive/folders/1M4t7pAkcP-IJh75xx-EMzAWTK1PZ-a64?usp=sharing",
     },
     {
         title: "SilverZone Computer Olympiad — Gold",
         year: "2015",
         body: "1st in school (85.711/100), State Rank 3, National Rank 30.",
-        href: "https://drive.google.com/drive/folders/1M4t7pAkcP-IJh75xx-EMzAWTK1PZ-a64?usp=sharing",
+        href: "https://drive.google.com/file/d/1xi0DsVjbKgxEp72YI9y8yY5OtmDmI7AX/view?usp=drive_link",
     },
 ];
 
