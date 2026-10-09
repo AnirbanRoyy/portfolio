@@ -59,18 +59,21 @@ export function Projects() {
                                         Live site
                                     </a>
                                 )}
-                                <a
-                                    href={p.github}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className={linkBadge}
-                                >
-                                    <HugeiconsIcon
-                                        icon={GithubIcon}
-                                        className="size-3.5"
-                                    />
-                                    GitHub
-                                </a>
+                                {p.repos.map((r) => (
+                                    <a
+                                        key={r.href}
+                                        href={r.href}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className={linkBadge}
+                                    >
+                                        <HugeiconsIcon
+                                            icon={GithubIcon}
+                                            className="size-3.5"
+                                        />
+                                        {r.label}
+                                    </a>
+                                ))}
                             </div>
                         </CardContent>
                     </Card>

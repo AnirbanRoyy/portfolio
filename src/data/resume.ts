@@ -187,7 +187,9 @@ export const projects = [
         ],
         tags: ["Next.js 16", "React 19", "TypeScript", "Tailwind v4", "shadcn/ui", "Supabase", "Upstash Redis", "Cloudinary", "next-intl", "Vercel"],
         live: "https://sodepur-durga-puja.vercel.app",
-        github: "https://github.com/AnirbanRoyy/durga-puja",
+        repos: [
+            { label: "GitHub", href: "https://github.com/AnirbanRoyy/durga-puja" },
+        ],
     },
     {
         title: "CloudTube",
@@ -200,6 +202,9 @@ export const projects = [
         ],
         tags: ["Next.js", "TypeScript", "Express", "MongoDB", "GCP", "Pub/Sub", "Cloud Run", "FFmpeg", "Terraform"],
         live: undefined as string | undefined,
-        github: "https://github.com/AnirbanRoyy/YouTube-BackEnd",
+        repos: [
+            { label: "Frontend", href: "https://github.com/AnirbanRoyy/cloudtube-frontend" },
+            { label: "Backend", href: "https://github.com/AnirbanRoyy/cloudtube-backend" },
+        ],
     },
 ];
