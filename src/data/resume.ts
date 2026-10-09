@@ -111,7 +111,7 @@ export const skills = [
     },
     {
         label: "Data",
-        items: ["MySQL", "PostgreSQL", "MongoDB", "Firestore", "Alembic"],
+        items: ["MySQL", "PostgreSQL", "MongoDB", "Firestore", "Supabase", "Redis", "Alembic"],
     },
     {
         label: "Cloud & tools",
@@ -176,6 +176,20 @@ export const certifications = [
 
 export const projects = [
     {
+        title: "Sodepur Durga Puja",
+        status: "Live",
+        body: "A bilingual (Bengali / English) web app that runs my village's annual community Durga Puja: programme schedule, registrations, live competitions, results, donations and a year-by-year archive, with an admin portal so organisers can run it without touching code. Designed and built solo.",
+        points: [
+            "One-registration-per-network guard using atomic Redis bit operations (Upstash) that fails open so an outage never blocks sign-ups, plus self-service edit and withdraw without accounts (hashed tokens in HTTP-only cookies, phone-verified recovery).",
+            "Musical-chair engine with shuffle-bag song selection and random start offsets and durations, plus a one-vote-per-visitor drawing contest using HMAC visitor hashes.",
+            "Supabase Postgres with Row Level Security: public read-only access, all writes server-side, and registrant contact data split into a private table after a security review.",
+            "Realtime lineups, votes and rounds; multi-year editions with a transactional start-new-year function; skeleton loading screens, SEO with structured data, sitemap and dynamic share images, and Vercel Speed Insights for real-user performance.",
+        ],
+        tags: ["Next.js 16", "React 19", "TypeScript", "Tailwind v4", "shadcn/ui", "Supabase", "Upstash Redis", "Cloudinary", "next-intl", "Vercel"],
+        live: "https://sodepur-durga-puja.vercel.app",
+        github: "https://github.com/AnirbanRoyy/durga-puja",
+    },
+    {
         title: "CloudTube",
         status: "In progress",
         body: "A cloud-native video platform, evolved from a MERN YouTube clone. The goal is a production-style pipeline: upload to Cloud Storage, Pub/Sub, an FFmpeg worker on Cloud Run, HLS output served through a CDN.",
@@ -185,6 +199,7 @@ export const projects = [
             "Frontend: Next.js App Router with shadcn/ui, with live-API and mock-data modes behind one data layer.",
         ],
         tags: ["Next.js", "TypeScript", "Express", "MongoDB", "GCP", "Pub/Sub", "Cloud Run", "FFmpeg", "Terraform"],
-        href: "https://github.com/AnirbanRoyy/YouTube-BackEnd",
+        live: undefined as string | undefined,
+        github: "https://github.com/AnirbanRoyy/YouTube-BackEnd",
     },
 ];
