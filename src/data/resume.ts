@@ -12,7 +12,8 @@ export const profile = {
         linkedin: "https://www.linkedin.com/in/anirbanroyy",
         twitter: "https://x.com/AnirbanRoyy",
         leetcode: "https://leetcode.com/anirban_royy",
-        resume: "https://1drv.ms/w/c/efd31f8703d8f3f6/IQAiajeHrXvrTJm5B52Sz6tpAb_9CouJN26MvmVcYeH1kII?e=VAYAqC",
+        // Live Google Doc (shared "anyone with the link"); /preview hides the Docs toolbar.
+        resume: "https://docs.google.com/document/d/1sJE2MdxZgjCudCW8xjilCcrrL4DkCI3bF6ssquw81BI/preview",
     },
 };
 
