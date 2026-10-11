@@ -9,7 +9,7 @@ Single-page Next.js portfolio for Anirban Roy. All content lives in `src/data/re
 - **Durga Puja project:** before writing or changing anything about it, read `../durga-puja/.claude/context.md`. It is the maintained map of what that app does and what changed, and it is newer than `resources/durga-puja-project-summary.md` (which is out of date). Re-read it each time; it changes often.
   @../durga-puja/.claude/context.md
 - **CloudTube:** `../youtube/plan/CONTEXT.md` (frontend and backend are separate repos: `cloudtube-frontend`, `cloudtube-backend`).
-- **Resume:** the live copy is `profile.links.resume`; `resources/Anirban_Roy_Resume.docx` is the original.
+- **Resume:** the source of truth is the Google Doc `1sJE2MdxZgjCudCW8xjilCcrrL4DkCI3bF6ssquw81BI` (shared "anyone with the link"). Buttons open its `/preview` URL via `profile.links.resume`. `resources/Anirban_Roy_Resume.docx` is a docx export of it; re-export (`.../export?format=docx`) after the doc changes.
 
 ## Conventions
 
