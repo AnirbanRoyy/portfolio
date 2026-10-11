@@ -1,9 +1,10 @@
 import { HugeiconsIcon } from "@hugeicons/react";
 import { GithubIcon, LinkSquare02Icon } from "@hugeicons/core-free-icons";
+import { FeatureGroups } from "@/components/feature-groups";
 import { Reveal } from "@/components/reveal";
 import { Badge, badgeVariants } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { projects } from "@/data/resume";
+import { projects } from "@/data/projects";
 
 const linkBadge = badgeVariants({ variant: "outline" }) + " gap-1.5 px-2.5 py-3 text-sm transition-colors hover:bg-muted";
 
@@ -33,6 +34,9 @@ export function Projects() {
                                     </li>
                                 ))}
                             </ul>
+                            {p.featureGroups.length > 0 && (
+                                <FeatureGroups groups={p.featureGroups} />
+                            )}
                             <div className="flex flex-wrap gap-1.5">
                                 {p.tags.map((t) => (
                                     <Badge
