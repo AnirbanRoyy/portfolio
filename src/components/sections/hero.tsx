@@ -3,6 +3,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
+    File01Icon,
     GithubIcon,
     Linkedin01Icon,
     Location01Icon,
@@ -62,6 +63,14 @@ export function Hero() {
                     href={`mailto:${profile.email}`}
                 >
                     <HugeiconsIcon icon={Mail01Icon} /> Get in touch
+                </a>
+                <a
+                    className={buttonVariants({ variant: "outline" })}
+                    href={profile.links.resume}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <HugeiconsIcon icon={File01Icon} /> Resume
                 </a>
                 <a
                     className={buttonVariants({ variant: "outline" })}
