@@ -10,6 +10,7 @@ export const profile = {
         github: "https://github.com/AnirbanRoyy",
         githubWork: "https://github.com/anirban-roy-bv",
         linkedin: "https://www.linkedin.com/in/anirbanroyy",
+        twitter: "https://x.com/AnirbanRoyy",
         leetcode: "https://leetcode.com/anirban_royy",
         resume: "https://1drv.ms/w/c/efd31f8703d8f3f6/IQAiajeHrXvrTJm5B52Sz6tpAb_9CouJN26MvmVcYeH1kII?e=VAYAqC",
     },
@@ -172,40 +173,5 @@ export const certifications = [
         title: "Claude Code in Action",
         body: "Anthropic Academy course on using Claude Code for real software work.",
         href: "https://academy.claude.com/verify/6185e4f8c0deacf3672d8927d61f39fd",
-    },
-];
-
-export const projects = [
-    {
-        title: "Sodepur Durga Puja",
-        status: "Live",
-        body: "A bilingual (Bengali / English) web app that runs my village's annual community Durga Puja: programme schedule, registrations, live competitions, results, donations and a year-by-year archive, with an admin portal so organisers can run it without touching code. Designed and built solo.",
-        points: [
-            "One-registration-per-network guard using atomic Redis bit operations (Upstash) that fails open so an outage never blocks sign-ups, plus self-service edit and withdraw without accounts (hashed tokens in HTTP-only cookies, phone-verified recovery).",
-            "Musical-chair engine with shuffle-bag song selection and random start offsets and durations, plus a one-vote-per-visitor drawing contest using HMAC visitor hashes.",
-            "Supabase Postgres with Row Level Security: public read-only access, all writes server-side, and registrant contact data split into a private table after a security review.",
-            "Realtime lineups, votes and rounds; multi-year editions with a transactional start-new-year function; skeleton loading screens, SEO with structured data, sitemap and dynamic share images, and Vercel Speed Insights for real-user performance.",
-        ],
-        tags: ["Next.js 16", "React 19", "TypeScript", "Tailwind v4", "shadcn/ui", "Supabase", "Upstash Redis", "Cloudinary", "next-intl", "Vercel"],
-        live: "https://sodepur-durga-puja.vercel.app",
-        repos: [
-            { label: "GitHub", href: "https://github.com/AnirbanRoyy/durga-puja" },
-        ],
-    },
-    {
-        title: "CloudTube",
-        status: "In progress",
-        body: "A cloud-native video platform, evolved from a MERN YouTube clone. The goal is a production-style pipeline: upload to Cloud Storage, Pub/Sub, an FFmpeg worker on Cloud Run, HLS output served through a CDN.",
-        points: [
-            "Planned around Terraform, CI/CD, observability, Redis caching and RBAC, plus load tests.",
-            "Backend: Node, Express and Mongoose API with JWT auth, covering users, videos, comments, playlists and subscriptions.",
-            "Frontend: Next.js App Router with shadcn/ui, with live-API and mock-data modes behind one data layer.",
-        ],
-        tags: ["Next.js", "TypeScript", "Express", "MongoDB", "GCP", "Pub/Sub", "Cloud Run", "FFmpeg", "Terraform"],
-        live: undefined as string | undefined,
-        repos: [
-            { label: "Frontend", href: "https://github.com/AnirbanRoyy/cloudtube-frontend" },
-            { label: "Backend", href: "https://github.com/AnirbanRoyy/cloudtube-backend" },
-        ],
     },
 ];

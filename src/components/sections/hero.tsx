@@ -8,6 +8,7 @@ import {
     Linkedin01Icon,
     Location01Icon,
     Mail01Icon,
+    NewTwitterIcon,
 } from "@hugeicons/core-free-icons";
 import { buttonVariants } from "@/components/ui/button";
 import { profile } from "@/data/resume";
@@ -87,6 +88,14 @@ export function Hero() {
                     rel="noreferrer"
                 >
                     <HugeiconsIcon icon={Linkedin01Icon} /> LinkedIn
+                </a>
+                <a
+                    className={buttonVariants({ variant: "outline" })}
+                    href={profile.links.twitter}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <HugeiconsIcon icon={NewTwitterIcon} /> Twitter
                 </a>
             </motion.div>
             <motion.p
