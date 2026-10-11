@@ -1,5 +1,6 @@
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
+    File01Icon,
     GithubIcon,
     Linkedin01Icon,
     Mail01Icon,
@@ -24,6 +25,14 @@ export function Contact() {
                     href={`mailto:${profile.email}`}
                 >
                     <HugeiconsIcon icon={Mail01Icon} /> {profile.email}
+                </a>
+                <a
+                    className={buttonVariants({ variant: "outline" })}
+                    href={profile.links.resume}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <HugeiconsIcon icon={File01Icon} /> Resume
                 </a>
                 <a
                     className={buttonVariants({ variant: "outline" })}
