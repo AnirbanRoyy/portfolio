@@ -10,6 +10,7 @@ export const profile = {
         github: "https://github.com/AnirbanRoyy",
         githubWork: "https://github.com/anirban-roy-bv",
         linkedin: "https://www.linkedin.com/in/anirbanroyy",
+        twitter: "https://x.com/AnirbanRoyy",
         leetcode: "https://leetcode.com/anirban_royy",
         resume: "https://1drv.ms/w/c/efd31f8703d8f3f6/IQAiajeHrXvrTJm5B52Sz6tpAb_9CouJN26MvmVcYeH1kII?e=VAYAqC",
     },

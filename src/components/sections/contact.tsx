@@ -4,6 +4,7 @@ import {
     GithubIcon,
     Linkedin01Icon,
     Mail01Icon,
+    NewTwitterIcon,
 } from "@hugeicons/core-free-icons";
 import { Reveal } from "@/components/reveal";
 import { buttonVariants } from "@/components/ui/button";
@@ -41,6 +42,14 @@ export function Contact() {
                     rel="noreferrer"
                 >
                     <HugeiconsIcon icon={Linkedin01Icon} /> LinkedIn
+                </a>
+                <a
+                    className={buttonVariants({ variant: "outline" })}
+                    href={profile.links.twitter}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <HugeiconsIcon icon={NewTwitterIcon} /> Twitter
                 </a>
                 <a
                     className={buttonVariants({ variant: "outline" })}
