@@ -59,6 +59,7 @@ export const experience = {
             points: [
                 "Moved a critical rendering path into backend-driven pipelines: ~120s to under 5s (~95%).",
                 "Replaced per-record API calls with backend batch operations: multi-edit/delete from >1 minute to under 14 seconds.",
+                "Ended query timeouts in a Fitbit heart-rate pipeline for a US children's hospital study: swapped a gap-detection scan over 67M+ unindexed rows for a per-user, per-day ingestion log (~4,500 rows, unique key), backfilled off-peak in 21 minutes.",
                 "Resolved production memory leaks, broken sockets, frequent logouts and infinite reconnect loops.",
                 "Traced a widespread auth failure to a wrong Firebase API key configuration and restored service.",
             ],
