@@ -52,7 +52,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <body className="min-h-full flex flex-col">
                 <Header />
                 {children}
-                <footer className="mx-auto w-full max-w-3xl px-6 py-10 text-xs text-muted-foreground">
+                <footer className="mx-auto w-full max-w-3xl px-6 py-10 text-center text-xs text-muted-foreground">
                     Made with{" "}
                     <span
                         role="img"
