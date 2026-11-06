@@ -1,10 +1,12 @@
 # Portfolio
 
-Personal portfolio of **Anirban Roy**, a full stack software engineer. It is a minimal, single-page site built with Next.js and statically prerendered, so it deploys to Vercel with no configuration.
+Personal portfolio of **Anirban Roy**, a full stack software engineer. It is a minimal site built with Next.js and statically prerendered, so it deploys to Vercel with no configuration.
 
 ## Features
 
-- Single page with Hero, Stats, Experience, Skills, Highlights (achievements, certifications, education) and Contact sections
+- Hero, Stats, Experience, Projects, Skills, Highlights (achievements, certifications, education) and Contact sections
+- On phones, one long scrolling page. On larger screens, each section is its own tab and route (`/experience`, `/projects`, ...), switched client-side
+- `/resume` redirects to the live resume (a Google Doc), so it can be shared as a short link
 - Light and dark theme that follows the system setting, with a manual toggle and no flash on load
 - Scroll-reveal, animated counters and collapsible experience groups, all of which respect `prefers-reduced-motion`
 - All content in one typed data file, so changing the text never means touching components
@@ -45,18 +47,21 @@ Open <http://localhost:3000>.
 ```
 src/
 ├── app/
-│   ├── layout.tsx        # Fonts, metadata, theme init script
-│   ├── page.tsx          # Page composition
+│   ├── layout.tsx        # Fonts, metadata, theme init, header and footer
+│   ├── page.tsx          # Home view (hero and stats on desktop)
+│   ├── experience/ ...   # One route per tab: experience, projects, skills, highlights, contact
 │   └── globals.css       # Tailwind and shadcn theme tokens
 ├── components/
 │   ├── sections/         # Hero, Stats, Experience, Skills, Highlights, Contact
 │   ├── ui/               # shadcn/ui components (button, badge, card, separator)
-│   ├── header.tsx        # Sticky nav
+│   ├── portfolio.tsx     # All sections; shows only the active one from sm up
+│   ├── header.tsx        # Sticky nav with active-tab indicator
 │   ├── theme-toggle.tsx  # Light/dark switch
 │   ├── reveal.tsx        # Scroll-reveal wrapper (Motion)
 │   └── counter.tsx       # Animated number counter
 ├── data/
-│   └── resume.ts         # All site content
+│   ├── resume.ts         # All site content
+│   └── tabs.ts           # Tab ids and labels (one route each)
 └── lib/utils.ts          # cn() class helper
 ```
 

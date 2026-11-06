@@ -2,7 +2,10 @@
 
 # Portfolio
 
-Single-page Next.js portfolio for Anirban Roy. All content lives in `src/data/resume.ts`; components in `src/components/sections/` only render it.
+Next.js portfolio for Anirban Roy. All content lives in `src/data/resume.ts` (and `projects.ts`); components in `src/components/sections/` only render it.
+
+- **Layout:** phones (below `sm`, 640px) must keep the single long page. From `sm` up, each tab in `src/data/tabs.ts` is its own static route (`src/app/<tab>/page.tsx`) rendering `<Portfolio view=…>`, which hides the other sections with `sm:hidden`. Header and footer live in the root layout. A deep link on a phone scrolls to its section (`scroll-to-section.tsx`).
+- **`/resume`** is a 307 redirect in `next.config.ts` to `profile.links.resume`.
 
 ## Project context sources
 
