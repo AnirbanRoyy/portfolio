@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Header } from "@/components/header";
+import { profile } from "@/data/resume";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -48,7 +50,26 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 <script dangerouslySetInnerHTML={{ __html: themeScript }} />
             </head>
             <body className="min-h-full flex flex-col">
+                <Header />
                 {children}
+                <footer className="mx-auto w-full max-w-3xl px-6 py-10 text-xs text-muted-foreground">
+                    Made with{" "}
+                    <span
+                        role="img"
+                        aria-label="love"
+                        className="inline-block motion-safe:animate-heartbeat"
+                    >
+                        ❤️
+                    </span>{" "}
+                    by{" "}
+                    <a
+                        href={`mailto:${profile.email}`}
+                        title="Say hi by email"
+                        className="font-medium text-orange-600 underline-offset-4 transition-colors hover:text-orange-500 hover:underline dark:text-orange-400 dark:hover:text-orange-300"
+                    >
+                        Anirban
+                    </a>
+                </footer>
                 <Analytics />
                 <SpeedInsights />
             </body>
